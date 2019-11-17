@@ -26,5 +26,71 @@ namespace OdevSerisi
         {
             InitializeComponent();
         }
+        string[] mailAdresler = new string[0];
+        int sayi1 = 0;
+        int sayi2 = 0;
+        int sayi3 = 0;
+        int sayi4 = 0;
+        int sayi5 = 0;
+        int sayi6 = 0;
+        private void metroButton1_Click(object sender, EventArgs e)
+        {
+            Array.Resize(ref mailAdresler, mailAdresler.Length + 1);
+            mailAdresler[mailAdresler.Length - 1] = mtxtGirisAlani.Text;
+            mailAdresler = mtxtGirisAlani.Text.Split(';');
+            mtxtGirisAlani.Clear();
+        }
+
+        private void metroButton2_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < mailAdresler.Length; i++)
+            {
+                if (mailAdresler[i].EndsWith("hotmail.com"))
+                {
+                    lstHotmailCom.Items.Add($"{mailAdresler[mailAdresler.Length - 1]} - {mailAdresler.Length - 1}");
+                    lblHotmailCom.Text = sayi1.ToString();
+                    sayi1++;
+                }
+                else if (mailAdresler[i].EndsWith("hotmail.com.tr"))
+                {
+                    lstHotmailComTr.Items.Add($"{mailAdresler[mailAdresler.Length - 1]} - {mailAdresler.Length - 1}");
+                    lblHotmailComTr.Text = sayi2.ToString();
+                    sayi2++;
+                }
+                else if (mailAdresler[i].EndsWith("hotmail.net"))
+                {
+                    lstHotmailNet.Items.Add($"{mailAdresler[mailAdresler.Length - 1]} - {mailAdresler.Length - 1}");
+                    lblHotmailNet.Text = sayi3.ToString();
+                    sayi3++;
+                }
+                else if (mailAdresler[i].EndsWith("gmail.com"))
+                {
+                    lstHotmailComTr.Items.Add($"{mailAdresler[mailAdresler.Length - 1]} - {mailAdresler.Length - 1}");
+                    lblGmailCom.Text = sayi4.ToString();
+                    sayi4++;
+                }
+                else if (mailAdresler[i].EndsWith("gmail.com.tr"))
+                {
+                    lstHotmailComTr.Items.Add($"{mailAdresler[mailAdresler.Length - 1]} - {mailAdresler.Length - 1}");
+                    metroLabel18.Text = sayi5.ToString();
+                    sayi5++;
+                }
+                else if (mailAdresler[i].EndsWith("gmail.net"))
+                {
+                    lstHotmailComTr.Items.Add($"{mailAdresler[mailAdresler.Length - 1]} - {mailAdresler.Length - 1}");
+                    lblGmailNet.Text = sayi6.ToString();
+                    sayi6++;
+                }
+                else
+                {
+                    lstCopKutusu.Items.Add($"{mailAdresler[mailAdresler.Length - 1]} - {mailAdresler.Length - 1}");
+                }
+                i++;
+                if (i == mailAdresler.Length)
+                {
+                    MessageBox.Show("Bütün Elemanları Ayrıştırdınız.");
+                }
+            }
+        }
     }
 }

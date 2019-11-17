@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
-            this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
+            this.mtxtGirisAlani = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
@@ -42,7 +42,7 @@
             this.metroLabel11 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel12 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel13 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel14 = new MetroFramework.Controls.MetroLabel();
+            this.lblHotmailCom = new MetroFramework.Controls.MetroLabel();
             this.lblHotmailComTr = new MetroFramework.Controls.MetroLabel();
             this.lblGmailCom = new MetroFramework.Controls.MetroLabel();
             this.lblHotmailNet = new MetroFramework.Controls.MetroLabel();
@@ -82,35 +82,35 @@
             this.metroLabel1.TabIndex = 0;
             this.metroLabel1.Text = "Mail Adersi : ";
             // 
-            // metroTextBox1
+            // mtxtGirisAlani
             // 
             // 
             // 
             // 
-            this.metroTextBox1.CustomButton.Image = null;
-            this.metroTextBox1.CustomButton.Location = new System.Drawing.Point(236, 1);
-            this.metroTextBox1.CustomButton.Name = "";
-            this.metroTextBox1.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.metroTextBox1.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox1.CustomButton.TabIndex = 1;
-            this.metroTextBox1.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox1.CustomButton.UseSelectable = true;
-            this.metroTextBox1.CustomButton.Visible = false;
-            this.metroTextBox1.Lines = new string[0];
-            this.metroTextBox1.Location = new System.Drawing.Point(121, 37);
-            this.metroTextBox1.MaxLength = 32767;
-            this.metroTextBox1.Name = "metroTextBox1";
-            this.metroTextBox1.PasswordChar = '\0';
-            this.metroTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox1.SelectedText = "";
-            this.metroTextBox1.SelectionLength = 0;
-            this.metroTextBox1.SelectionStart = 0;
-            this.metroTextBox1.ShortcutsEnabled = true;
-            this.metroTextBox1.Size = new System.Drawing.Size(258, 23);
-            this.metroTextBox1.TabIndex = 1;
-            this.metroTextBox1.UseSelectable = true;
-            this.metroTextBox1.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox1.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.mtxtGirisAlani.CustomButton.Image = null;
+            this.mtxtGirisAlani.CustomButton.Location = new System.Drawing.Point(236, 1);
+            this.mtxtGirisAlani.CustomButton.Name = "";
+            this.mtxtGirisAlani.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.mtxtGirisAlani.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.mtxtGirisAlani.CustomButton.TabIndex = 1;
+            this.mtxtGirisAlani.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.mtxtGirisAlani.CustomButton.UseSelectable = true;
+            this.mtxtGirisAlani.CustomButton.Visible = false;
+            this.mtxtGirisAlani.Lines = new string[0];
+            this.mtxtGirisAlani.Location = new System.Drawing.Point(121, 37);
+            this.mtxtGirisAlani.MaxLength = 32767;
+            this.mtxtGirisAlani.Name = "mtxtGirisAlani";
+            this.mtxtGirisAlani.PasswordChar = '\0';
+            this.mtxtGirisAlani.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.mtxtGirisAlani.SelectedText = "";
+            this.mtxtGirisAlani.SelectionLength = 0;
+            this.mtxtGirisAlani.SelectionStart = 0;
+            this.mtxtGirisAlani.ShortcutsEnabled = true;
+            this.mtxtGirisAlani.Size = new System.Drawing.Size(258, 23);
+            this.mtxtGirisAlani.TabIndex = 1;
+            this.mtxtGirisAlani.UseSelectable = true;
+            this.mtxtGirisAlani.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.mtxtGirisAlani.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // metroLabel2
             // 
@@ -220,17 +220,17 @@
             this.metroLabel13.TabIndex = 2;
             this.metroLabel13.Text = ":";
             // 
-            // metroLabel14
+            // lblHotmailCom
             // 
-            this.metroLabel14.AutoSize = true;
-            this.metroLabel14.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel14.ForeColor = System.Drawing.Color.Red;
-            this.metroLabel14.Location = new System.Drawing.Point(142, 49);
-            this.metroLabel14.Name = "metroLabel14";
-            this.metroLabel14.Size = new System.Drawing.Size(21, 25);
-            this.metroLabel14.TabIndex = 2;
-            this.metroLabel14.Text = "0";
-            this.metroLabel14.UseCustomForeColor = true;
+            this.lblHotmailCom.AutoSize = true;
+            this.lblHotmailCom.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.lblHotmailCom.ForeColor = System.Drawing.Color.Red;
+            this.lblHotmailCom.Location = new System.Drawing.Point(142, 49);
+            this.lblHotmailCom.Name = "lblHotmailCom";
+            this.lblHotmailCom.Size = new System.Drawing.Size(21, 25);
+            this.lblHotmailCom.TabIndex = 2;
+            this.lblHotmailCom.Text = "0";
+            this.lblHotmailCom.UseCustomForeColor = true;
             // 
             // lblHotmailComTr
             // 
@@ -300,6 +300,7 @@
             this.metroButton1.TabIndex = 5;
             this.metroButton1.Text = "Ekle";
             this.metroButton1.UseSelectable = true;
+            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
             // 
             // metroButton2
             // 
@@ -309,6 +310,7 @@
             this.metroButton2.TabIndex = 6;
             this.metroButton2.Text = "Ayrıştır";
             this.metroButton2.UseSelectable = true;
+            this.metroButton2.Click += new System.EventHandler(this.metroButton2_Click);
             // 
             // metroLabel15
             // 
@@ -324,7 +326,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.metroTextBox1);
+            this.groupBox1.Controls.Add(this.mtxtGirisAlani);
             this.groupBox1.Controls.Add(this.metroLabel1);
             this.groupBox1.Controls.Add(this.metroButton2);
             this.groupBox1.Controls.Add(this.metroButton1);
@@ -339,7 +341,7 @@
             // 
             this.groupBox2.Controls.Add(this.metroLabel2);
             this.groupBox2.Controls.Add(this.metroLabel8);
-            this.groupBox2.Controls.Add(this.metroLabel14);
+            this.groupBox2.Controls.Add(this.lblHotmailCom);
             this.groupBox2.Controls.Add(this.metroLabel3);
             this.groupBox2.Controls.Add(this.metroLabel9);
             this.groupBox2.Controls.Add(this.lblHotmailComTr);
@@ -529,7 +531,7 @@
         #endregion
 
         private MetroFramework.Controls.MetroLabel metroLabel1;
-        private MetroFramework.Controls.MetroTextBox metroTextBox1;
+        private MetroFramework.Controls.MetroTextBox mtxtGirisAlani;
         private MetroFramework.Controls.MetroLabel metroLabel2;
         private MetroFramework.Controls.MetroLabel metroLabel3;
         private MetroFramework.Controls.MetroLabel metroLabel4;
@@ -542,7 +544,7 @@
         private MetroFramework.Controls.MetroLabel metroLabel11;
         private MetroFramework.Controls.MetroLabel metroLabel12;
         private MetroFramework.Controls.MetroLabel metroLabel13;
-        private MetroFramework.Controls.MetroLabel metroLabel14;
+        private MetroFramework.Controls.MetroLabel lblHotmailCom;
         private MetroFramework.Controls.MetroLabel lblHotmailComTr;
         private MetroFramework.Controls.MetroLabel lblGmailCom;
         private MetroFramework.Controls.MetroLabel lblHotmailNet;
